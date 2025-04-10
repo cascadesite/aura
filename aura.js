@@ -1,4 +1,4 @@
-/* aura.js */
+// aura.js
 
 document.addEventListener("DOMContentLoaded", () => {
   const syntaxRegex = /:aura{([^}]+)}/g;
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
           .join(", ");
 
       const style = `
-        --top: ${props.top || '0'};
+        --top: ${props.top || 'auto'};
         --left: ${props.left || 'auto'};
         --right: ${props.right || 'auto'};
         --width: ${props.width || '10rem'};
