@@ -45,7 +45,7 @@ Now, you can add glowing aura blobs anywhere in your HTML using the custom `:aur
 - **`width`**: Set the width of the aura (e.g., `width=200px`, `width=50%`)
 - **`height`**: Set the height of the aura (e.g., `height=200px`)
 - **`blur`**: Set the blur effect (e.g., `blur=60px`)
-- **`color1`, `color2`, `color3`**: Set the colors for the gradient background (e.g., `color1=rgba(255,0,150,0.3)`)
+- **`color1`, `color2`, `color3`, ..., `colorN`**: Set the colors for the gradient background (e.g., `color1=rgba(255,0,150,0.3)` or `color4=rgba(0,255,255,0.3)`)
 
 ---
 
