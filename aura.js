@@ -12,7 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
           props[match[1]] = match[2];
       }
 
-      let style = `
+      const gradientColors = Object.keys(props)
+          .filter(key => key.startsWith("color"))
+          .sort((a, b) => parseInt(a.slice(5)) - parseInt(b.slice(5)))
+          .map(key => props[key])
+          .join(", ");
+
+      const style = `
         --top: ${props.top || '0'};
         --left: ${props.left || 'auto'};
         --right: ${props.right || 'auto'};
@@ -20,13 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
         --height: ${props.height || '10rem'};
         --z: ${props.z || '10'};
         --blur: ${props.blur || '50px'};
+        --gradient-colors: ${gradientColors};
       `.trim();
-
-      Object.keys(props).forEach((key) => {
-          if (key.startsWith("color")) {
-              style += `--${key}: ${props[key]};`;
-          }
-      });
 
       return `<div class="aura-blob" style="${style}"></div>`;
   });

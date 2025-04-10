@@ -1,18 +1,13 @@
 /* aura.css */
 .aura-blob {
-    position: absolute;
-    height: var(--height, 10rem);
-    width: var(--width, 10rem);
-    top: var(--top, 0);
-    left: var(--left, auto);
-    right: var(--right, auto);
-    z-index: var(--z, 10);
-    pointer-events: none;
-    filter: blur(var(--blur, 50px));
-    background: linear-gradient(
-      97.62deg,
-      var(--color1, rgba(0, 71, 225, 0.22)) 2.27%,
-      var(--color2, rgba(26, 214, 255, 0.22)) 50.88%,
-      var(--color3, rgba(0, 220, 130, 0.22)) 98.48%
-    );
-  }  
+  position: absolute;
+  height: var(--height, 10rem);
+  width: var(--width, 10rem);
+  top: var(--top, 0);
+  left: var(--left, auto);
+  right: var(--right, auto);
+  z-index: var(--z, 10);
+  pointer-events: none;
+  filter: blur(var(--blur, 50px));
+  background: linear-gradient(var(--gradient-colors));
+}
