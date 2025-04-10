@@ -1,8 +1,8 @@
-// aura.js
+/* aura.js */
 
 document.addEventListener("DOMContentLoaded", () => {
   const syntaxRegex = /:aura{([^}]+)}/g;
-  const attrRegex = /([\w-]+)=([^s]+)/g;
+  const attrRegex = /([\w-]+)=([^ ]+)/g;
 
   document.body.innerHTML = document.body.innerHTML.replace(syntaxRegex, (_, attrString) => {
       const props = {};

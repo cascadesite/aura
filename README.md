@@ -74,12 +74,8 @@ Here’s a simple example combining everything together:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aura Glow Effect</title>
-  
-  <!-- Link to Aura CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yourusername/aura-markup/aura.css">
-  
-  <!-- Link to Aura JS -->
-  <script src="https://cdn.jsdelivr.net/gh/yourusername/aura-markup/aura.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cascadesite/aura/aura.css">
+  <script src="https://cdn.jsdelivr.net/gh/cascadesite/aura/aura.js"></script>
 </head>
 <body>
 
